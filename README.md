@@ -42,9 +42,13 @@
   - `docker-compose up --build`
 
 - ### Локально:
-  Выполните команды в терминале:
-  1. `pip install -r requirements.txt` установка зависимостей
-  2. `uvicorn main:app --reload --host 0.0.0.0 --port 8000` запуск сервера
+  - Настройте БД:
+     - Вариант 1: добавьте в свои переменные окружения:
+       - `DATABASE_URL=sqlite:///:memory:`
+     - Вариант 2: переименуйте файл `.env_example` в `.env`
+  - Выполните команды в терминале:
+    - `pip install -r requirements.txt` установка зависимостей
+    - `uvicorn main:app --reload --host 0.0.0.0 --port 8000` запуск сервера
 
 ### Функции:
 
