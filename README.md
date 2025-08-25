@@ -37,14 +37,14 @@
 
 # Запуск:
 
-### Запуск через Docker :
+- ### Через Docker :
 
-- `docker-compose up --build`
+  - `docker-compose up --build`
 
-### Запуск локально:
-Выполните команды в терминале:
-1. `pip install -r requirements.txt` установка зависимостей
-2. `uvicorn main:app --reload --host 0.0.0.0 --port 8000` запуск сервера
+- ### Локально:
+  Выполните команды в терминале:
+  1. `pip install -r requirements.txt` установка зависимостей
+  2. `uvicorn main:app --reload --host 0.0.0.0 --port 8000` запуск сервера
 
 ### Функции:
 
